@@ -1,6 +1,33 @@
-body {
-    background-color: aquamarine;
+#accueil {
+    background-image: url(../Images/fond3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
- #Accueil {
-      
+
+li{
+    font-weight: bold;
+}
+
+h1 {
+    text-decoration:underline;
+}
+
+.test {
+    font-weight:bold;
+    color: white;
+}
+#page2 {
+    background-image: url(../Images/images.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#page2  img{
+    height:200px;
+
+}
+#page2 a {
+    color: white;
 }
