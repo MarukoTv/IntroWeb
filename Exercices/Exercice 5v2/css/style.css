@@ -1,6 +1,6 @@
 ﻿main{
 	margin:0 auto; /* permet de centrer la page*/
-	width: 65%;
+	width: 55%;
 text-align:center;
 }
 
@@ -13,22 +13,31 @@ h1, h2 {
 
 nav
 {
-	width : 150px;
+	width : 12%;
 	border : 1px solid blue ;
-	text-align:left;
+	text-align:center;
+    margin-right:20px;
     display: inline-block;
-    vertical-align:top;
-    position:relative;
-    right:7%;
-    margin-right:50px;
 }
-section {
+section{
+    display:inline-block;
+    width: 60%;
+    vertical-align:top;
+}
+article {
     border: 1px solid blue;
-    width: 44%;
+    width: 45%;
     display: inline-block;
     vertical-align:top;
-    position:relative;
-    right:7%;
+margin-right: 1%;
+
+}
+aside {
+    border: 1px solid blue;
+    width: 45%;
+    display: inline-block;
+    vertical-align:top;
+
 
 }
 
