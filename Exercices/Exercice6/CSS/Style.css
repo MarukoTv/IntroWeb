@@ -10,4 +10,53 @@
     margin-bottom: 10px;
     font-size: 15px;
     padding-bottom: 3px;
+
+}
+
+label {
+
+    display:inline-block;
+margin-bottom:10px;
+    width: 40%;
+
+}
+
+#datefin {
+padding-right:10px;
+    font-weight: bold;
+ }
+input{
+ margin-bottom:10px;
+
+
+
+}
+input[type=text]{
+    padding-right: 100px;
+}
+body{
+    width:50%;
+    margin:auto;
+
+}
+input[type=password]{
+    padding-right: 100px;
+}
+input[type=email]{
+    padding-right: 100px;
+}
+#date {
+    padding-right:10px;
+}
+#carte{
+    padding-right:10px;
+}
+#telephone{
+    padding-right:10px;
+}
+em{
+    color:red;
+}
+input[type=submit]{
+    margin-right: 10px;
 }
