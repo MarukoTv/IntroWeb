@@ -1,7 +1,7 @@
 ﻿main{
     margin:0 auto; /* permet de centrer la page*/
 
-width: 55%;
+width: 70%;
 text-align:center;
 }
 
@@ -14,7 +14,7 @@ h1, h2 {
 
 nav
 {
-    width : 12%;
+    width : 25%;
     border : 1px solid blue ;
     text-align:center;
     margin-right:20px;
@@ -43,7 +43,7 @@ aside {
 }
 img {
     position:relative;
-    left:43%;
+    left:36%;
 }
 
 footer {
