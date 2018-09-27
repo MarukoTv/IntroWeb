@@ -155,5 +155,76 @@ footer p {
 	text-align:center;
 
 }
+label {
+
+	display:inline-block;
+	margin-bottom:10px;
+	width: 19.5%;
+	vertical-align: top;
+	margin-left:6%;
+
+}
 
 
+
+input{
+	margin-bottom:10px;
+
+
+
+}
+input[type=text]{
+	width: 30%;
+}
+
+
+input[type=email]{
+	width: 30%;
+}
+
+#telephone{
+	width:30%;
+}
+em{
+	color:red;
+}
+
+#lol{
+
+	margin-left:6%;
+}
+
+.sumit{
+
+	width:30%;
+  height: 30px;
+}
+
+textarea{
+width: 35%;
+	height: 35%;
+	margin-bottom:8px;
+}
+
+table{
+	margin-left:25%;
+	border: 3px solid rebeccapurple;
+	border-collapse: collapse;
+	text-align:center;
+	width:50%;
+}
+
+td,th{
+	border: 2px solid deepskyblue;
+	width:10%;
+	text-align:center;
+}
+
+#titre{
+	color:black;
+	text-align:center;
+}
+th{
+	background-color:black;
+	color:white;
+}
