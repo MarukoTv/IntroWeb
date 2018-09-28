@@ -208,14 +208,14 @@ width: 35%;
 
 table{
 	margin-left:25%;
-	border: 3px solid rebeccapurple;
+	border: 3px solid darkcyan;
 	border-collapse: collapse;
 	text-align:center;
 	width:50%;
 }
 
 td,th{
-	border: 2px solid deepskyblue;
+	border: 2px solid seagreen;
 	width:10%;
 	text-align:center;
 }
@@ -225,6 +225,22 @@ td,th{
 	text-align:center;
 }
 th{
-	background-color:black;
+	background-color:yellowgreen;
 	color:white;
+}
+.humain:hover {
+background-color:black;
+    color:white;
+}
+.baleine:hover {
+    background-color:springgreen;
+}
+.beluga:hover {
+    background-color:yellow;
+}
+.dauphin:hover{
+    background-color:darkcyan;
+}
+.lion:hover{
+    background-color:seagreen;
 }
