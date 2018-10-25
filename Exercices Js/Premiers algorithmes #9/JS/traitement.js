@@ -3,7 +3,7 @@ function btnCalculer_onclick()
  	var BilletTotal,Etudiant,Adulte,Vieux,Total;
 
 
-    Etudiant  = document.getElementById("txtEtudiant").value;
+    Etudiant  = parseFloat(document.getElementById("txtEtudiant").value);
     Adulte = parseFloat(document.getElementById("txtAdulte").value);
     Vieux = parseFloat(document.getElementById("txtVieux").value);
     BilletTotal =  parseFloat(document.getElementById("txtTotal").value);
