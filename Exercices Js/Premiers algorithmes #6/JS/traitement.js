@@ -1,15 +1,15 @@
 function btnCalculer_onclick()
 { 
- 	var Un,Cinq,Dix,Vc,Total;
+ 	var Revenus,Loyer,Nourriture,Deplacements,Reste;
 
-    Un =document.getElementById("txtUn").value;
-    Cinq = parseFloat(document.getElementById("txtCinq").value);
-    Dix = parseFloat(document.getElementById("txtDix").value);
-    Vc = parseFloat(document.getElementById("txtVc").value);
+    Revenus =document.getElementById("txtRevenus").value;
+    Loyer = parseFloat(document.getElementById("txtLoyer").value);
+    Nourriture = parseFloat(document.getElementById("txtNourriture").value);
+    Deplacements = parseFloat(document.getElementById("txtDeplacements").value);
 
-    Total= (Un*1/100)+(Cinq*5/100)+(Dix*10/100)+(Vc*25/100);
+    Reste = (Revenus-Loyer-Nourriture-Deplacements)/4.33;
 
-    console.log("Le total es de "+ Total.toFixed(2)+"$" );
+    console.log("Votre revenus mensuels est de "+ Reste.toFixed(2)+"$" );
 
 
 }
