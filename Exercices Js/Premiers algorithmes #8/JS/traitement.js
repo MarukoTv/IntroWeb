@@ -6,7 +6,7 @@ ChoixVeterinaire = document.getElementById("lstVeterinaire").value;
 NbrJrs= parseFloat(document.getElementById("txtNbreJours").value);
 
 
-if(document.getElementById("radMidi").checked == true)
+if(document.getElementById("chkServ").checked == true)
 {
     CoutToilettage=5;
     service="avec";
