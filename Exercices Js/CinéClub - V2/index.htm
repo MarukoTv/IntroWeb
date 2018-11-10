@@ -15,11 +15,12 @@
       <p> Entrez l'âge:<input id="txtAge" name="txtAge" ></p>
        <!-- Radio bouton -->
       <p class="Align"> </p> <label >Choix du film :</label>
-         <select  id="lstFilm" name="lstFilm">
-            <option value="Film 1" >Film 1</option>
-            <option value="Film 2"  >Film 2</option>
-            <option value="Film 3" >Film 3</option>
-            <option value="Film 4" >Film 4</option>
+         <select  id="lstFilm" name="lstFilm"  onchange="btnDeroulant_onchange1(this.value)">
+            <option  >Choisisez</option>
+            <option value="1" >Film 1</option>
+            <option value="2"  >Film 2</option>
+            <option value="3"  >Film 3</option>
+            <option  value="4"  >Film 4</option>
          </select>
       <p class="Align">
             Midi<input type="radio" name="radChoix" checked="true" id="radMidi">
@@ -33,7 +34,11 @@
       <p><button id="btnCalculer" name="btnCalculer" type="button" onclick="btnCalculer_onclick()">Calculer</button></p>
 
    </fieldset>
-   <script src="JS/traitement.js"></script>
+
 </form>
+<p class="Align">
+   <img src="img/fond.jpg" alt="Photo changeante" id="photo" />
+</p>
+<script src="JS/traitement.js"></script>
 </body>
 </html>
