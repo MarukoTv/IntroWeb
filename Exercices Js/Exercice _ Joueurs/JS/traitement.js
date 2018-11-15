@@ -15,17 +15,21 @@ function  btnAjouter_onclick()
 }
 function btnTrouverMoy_onclick()
 {
-    saisirMoyenne();
+    var moyenne;
+    moyenne=saisirMoyenne();
+    document.getElementById("lblReponse").innerHTML="La moyenne est de  " + moyenne;
 }
 function btnTrouverMeilleur_onclick()
 {
-
-    SaisirMeilleurPointage();
+    var retourner;
+    retourner=SaisirMeilleurPointage();
+    document.getElementById("lblReponse").innerHTML="Le meilleur pointage est de  " + tabPoint[retourner] + " réalisé par "+tabJoueur[retourner];
 }
 function btnTrouverPire_onclick()
 {
-
-    SaisirPirePointage();
+    var retourner;
+    retourner=SaisirPirePointage();
+    document.getElementById("lblReponse").innerHTML="Le pire pointage est de  " +tabPoint[retourner] + " réalisé par "+ tabJoueur[retourner];
 }
 function saisirInformation()
 {
@@ -46,25 +50,25 @@ function saisirMoyenne ()
         moyenne+=tabPoint[i];
     }
     moyenne=moyenne/tabPoint.length;
-    document.getElementById("lblReponse").innerHTML="La moyenne est de  " + moyenne;
+
+
+    return moyenne;
 }
 function SaisirMeilleurPointage()
 {
-    var i,meilleurJoueur,meilleurPointage;
-
+    var i;
     var max=0;
-
+    var retourner;
     for(i=0;i<tabPoint.length;i++)
     {
       if(max<=tabPoint[i])
       {
-          max=tabPoint[i];
-          meilleurPointage=tabPoint[i];
-          meilleurJoueur=tabJoueur[i];
-
+          retourner=i;
       }
     }
-    document.getElementById("lblReponse").innerHTML="Le meilleur pointage est de  " + meilleurPointage + " réalisé par "+meilleurJoueur;
+
+    return retourner;
+
 }
 function ajouterCondition() {
 
@@ -80,21 +84,18 @@ function ajouterCondition() {
 
 function SaisirPirePointage()
 {
-    var i,pireJoueur,pirePoints;
-
+    var i;
     var pire=100;
-
+    var retourner;
     for(i=0;i<tabPoint.length;i++)
     {
         if(pire>=tabPoint[i])
         {
-            pire=tabPoint[i];
-            pirePoints=tabPoint[i];
-            pireJoueur=tabJoueur[i];
+            retourner=i;
         }
 
     }
-    document.getElementById("lblReponse").innerHTML="Le pire pointage est de  " +pirePoints + " réalisé par "+ pireJoueur;
+    return retourner;
 }
 function changerJoueur()
 {
