@@ -1,18 +1,31 @@
-function frmMembre_onclick()
+function frmMembre_onsubmit()
 {
- var valider=false;
- if(validerChampsObli()===true)
- {
-     if(validerFormat()===true)
-     {
-       valider=true;
-     }
- }
+    var valider=false;
+    if(validerChampsObli()===true)
+    {
+        if(validerFormat()===true)
+        {
+           total=validerInfo();
+
+            if(confirm("Voulez-vous vraiment vous inscrire? "+" Cela va vous coûter "+total+"$") === true)
+            {
+
+                valider=true;
+            }
+        }
+        else
+
+            valider=false;
+
+    }
+    else
+        valider=false;
+
+    return valider;
 
 
- return valider;
+
 }
-
 
 function validerChampsObli()
 {
@@ -20,28 +33,43 @@ function validerChampsObli()
     var valider=true;
     var i;
     for(i=0;i<tabnomId.length;i++)
+   {
+    if(valideExist(tabnomId[i])===false)
     {
-        if(valideExist(tabnomId[i])===false)
-        {
-            valider=false;
-        }
-
+        valider=false;
     }
+
+}
     return valider;
 }
-
+function validerInfo()
+{
+    var type;
+    var total;
+    type=document.getElementById("type").value;
+    switch(type)
+    {
+        case "adulte": total=90;
+            break;
+        case "étudiant":
+        total=60;break;
+        case"retraité":total=80;
+            break;
+    }
+    return total;
+}
 function valideExist(nomId)
 {
     var valider =true;
     if (document.getElementById(nomId).value ==="")
     {
         valider=false;
-        document.getElementById(nomId).style.backgroundColor="red";
+        document.getElementById("lblMessageErreur").innerHTML="Veuillez entrer toutes les champs obligatoires";
 
     }
     else {
         valider=true;
-        document.getElementById(nomId).style.backgroundColor="white";
+        document.getElementById("lblMessageErreur").innerHTML="";
     }
     return valider;
 }
@@ -73,6 +101,7 @@ var valider=true;
         document.getElementById("txtNom").style.borderColor = "";
     }
     if(nomPrenomVille(document.getElementById("txtPrenom").value) === false)
+
     {
         document.getElementById("txtPrenom").style.borderColor = "red";
         valider=false;
@@ -127,3 +156,4 @@ function adresse(Chaine)
 {
   return  /^([0-9]{4}) ([A-z]{1,}) ([A-z]{1,})-?([A-z]{1,})$/.test(Chaine);
 }
+
