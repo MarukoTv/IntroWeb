@@ -93,7 +93,6 @@ function SaisirPirePointage()
         {
             retourner=i;
         }
-
     }
     return retourner;
 }
